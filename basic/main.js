@@ -93,17 +93,17 @@ class BlockChain {
 
 const coin = new BlockChain();
 
-console.log("Transaction ABC -> xyz");
-coin.createTransaction(new Transaction("ABC", "xyz", 100));
+console.log("Transaction ABC -> XYZ");
+coin.createTransaction(new Transaction("ABC", "XYZ", 100));
 
-console.log("Transaction xyz -> ABC");
-coin.createTransaction(new Transaction("xyz", "ABC", 20));
+console.log("Transaction XYZ -> ABC");
+coin.createTransaction(new Transaction("XYZ", "ABC", 20));
 
 console.log("current chain");
 console.log(coin);
 
 console.log("current balance of ABC", coin.checkBalance("ABC"));
-console.log("current balance of xyz", coin.checkBalance("xyz"));
+console.log("current balance of XYZ", coin.checkBalance("XYZ"));
 console.log("current balance of miner", coin.checkBalance("miner"));
 
 runTest(3);
@@ -118,7 +118,7 @@ function runTest(count) {
     console.log(coin);
 
     console.log("current balance of ABC", coin.checkBalance("ABC"));
-    console.log("current balance of xyz", coin.checkBalance("xyz"));
+    console.log("current balance of XYZ", coin.checkBalance("XYZ"));
     console.log("current balance of miner", coin.checkBalance("miner"));
   }
 }
