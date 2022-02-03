@@ -93,10 +93,10 @@ class BlockChain {
 
 const coin = new BlockChain();
 
-console.log("Transaction ABC -> XYZ");
+console.log("New Transaction ABC -> XYZ");
 coin.createTransaction(new Transaction("ABC", "XYZ", 100));
 
-console.log("Transaction XYZ -> ABC");
+console.log("New Transaction XYZ -> ABC");
 coin.createTransaction(new Transaction("XYZ", "ABC", 20));
 
 console.log("current chain");
